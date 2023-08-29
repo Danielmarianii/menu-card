@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            background-color: lightgray;
+        }
+        
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgb(51, 51, 51);
+            color: white;
+            border-bottom: solid 5px rgb(79, 173, 219);
+            height: 80px;
+        }
+        
+        .logo img {
+            height: 65px;
+        }
+        
+        .menu {
+            flex-grow: 10;
+        }
+
+        .menu ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0 50px;
+            padding: 0;
+        }
+        
+        .cabecalho a {
+            text-decoration: none;
+            color: rgb(238, 238, 238);
+            font-size: 1.3em;
+            padding: 10px 15px;
+        }
+        
+        .menu a:hover {
+            background-color: rgb(79, 173, 219);
+            color: black;
+            border-radius: 7px;
+        }
+        
+        .cabecalho .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin-right: 10px;
+        }
+        
+        .destaque {
+            background: rgb(245, 10, 49);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="imagens/logo.png" alt="Logo" alt="Logo" />
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+</body>
+
+</html>
