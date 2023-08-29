@@ -1,0 +1,117 @@
+   * {
+       box-sizing: border-box;
+   }
+
+   body {
+       font-family: 'Oswald', sans-serif;
+       background-color: gainsboro;
+       margin: 0px;
+       padding: 0px;
+   }
+
+   .cabecalho {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       background-color: black;
+       padding: 15px;
+       height: 70px;
+       border-bottom: solid 5px rgb(92, 167, 232);
+   }
+
+   .logo {
+       padding: 10px;
+   }
+
+   .menu-toggle {
+       float: right;
+       display: none;
+       margin-top: 10px;
+       font-size: 35px;
+       width: 80px;
+       height: 55px;
+       border: solid 3px rgb(92, 167, 232);
+       border-radius: 15px;
+       background-color: gray;
+   }
+
+   .menu-toggle:hover {
+       background-color: rgb(113, 139, 161);
+       cursor: pointer;
+   }
+
+   .menu-toggle:active {
+       border: solid 1px black;
+   }
+
+   .menu li {
+       position: relative;
+       padding: 15px 0px 15px 0px;
+       font-size: 25px;
+       border-radius: 5px;
+       margin: 0px 15px;
+   }
+
+   .menu {
+       flex-grow: 10;
+   }
+
+   .menu ul {
+       display: flex;
+       flex-direction: row;
+   }
+
+   .menu a {
+       text-decoration: none;
+       color: white;
+       padding: 10px;
+   }
+
+   .menu li:hover,
+   .menu a.selected {
+       background-color: rgb(45, 102, 233);
+       color: black;
+       border-radius: 5px;
+   }
+
+   .autenticacao {
+       top: 50px;
+       right: 120px;
+   }
+
+   .autenticacao a {
+       text-decoration: none;
+       color: white;
+       margin-right: 10px;
+       font-size: 25px;
+   }
+
+   .autenticacao a:hover {
+       color: grey;
+   }
+
+   .botao {
+       background-color: red;
+       border-radius: 25px;
+       padding: 0px 20px 0px 20px;
+   }
+
+   .botao:hover {
+       background-color: rgb(226, 85, 85);
+   }
+
+   p {
+       margin-top: 1200px;
+       margin-left: 100px;
+       color: red;
+   }
+
+   @media (max-width:990px) {
+       .menu a {
+           display: none;
+       }
+
+       .menu-toggle {
+           display: block;
+       }
+   }
